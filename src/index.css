@@ -73,7 +73,6 @@ body {
 }
 
 .heading {
-  /* font-family: Avantt; */
   font-size: 46px;
   font-weight: 600;
   line-height: 59.8px;
@@ -84,7 +83,6 @@ body {
 }
 
 .first-pera {
-  /* font-family: Avantt; */
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -222,4 +220,19 @@ body {
     grid-column: 3/6 !important;
     grid-row: 6/7 !important;
   }
+    .grid-padding {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+        .heading {
+          font-size: 36px;
+          line-height: 59.8px;
+          text-align: left;
+          padding-bottom: 32px;
+        }
+    
+        .first-pera {
+          font-size: 14px;
+          
+        }
 }
