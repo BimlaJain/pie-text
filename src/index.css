@@ -1,5 +1,13 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
+@font-face {
+  font-family: "Avantt";
+  src: url("../public/assets/fonts/AvanttTRIAL-Medium-BF6721a86adebb3.otf") format("opentype");
+}
+
+body {
+  font-family: "Avantt", sans-serif;
+}
 .color-lightpurple {
   background-color: #362B4F;
 }

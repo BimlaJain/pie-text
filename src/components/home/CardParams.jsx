@@ -7,7 +7,7 @@ function App() {
     return (
         <div className="container pb-5">
             <h1>Map Cards</h1>
-            <div className=" d-flex justify-content-between gap-4">
+            <div className=" d-flex flex-wrap justify-content-between gap-4">
                 <div>
                     <Link to="/map-card-1" className="card-link">
                         <div className="card">
