@@ -1,34 +1,25 @@
 import React, { useState, useEffect } from 'react';
 
 const Counting = () => {
-    // Initialize the count state to 1 for counting from 1-100
     const [count, setCount] = useState(1);
-    const [isCounting, setIsCounting] = useState(true); // To control the counting process
-
-    // For displaying the numbers from 9 to 0
+    const [isCounting, setIsCounting] = useState(true);
     const numbers = [];
     for (let i = 9; i >= 0; i--) {
         numbers.push(i);
     }
-
-    // Increment function
     const increment = () => setCount(count + 1);
-
-    // Decrement function
     const decrement = () => setCount(count - 1);
-
-    // Effect to handle counting from 1 to 100 with a 1 second interval
     useEffect(() => {
         if (count <= 100 && isCounting) {
             const timer = setInterval(() => {
                 setCount(prevCount => prevCount + 1);
-            }, 1000); // Set interval to update count every 1 second
+            }, 1000); 
 
-            return () => clearInterval(timer); // Cleanup interval on component unmount
+            return () => clearInterval(timer); 
         } else {
-            setIsCounting(false); // Stop counting once the count reaches 100
+            setIsCounting(false); 
         }
-    }, [count, isCounting]); // Runs on count and isCounting change
+    }, [count, isCounting]); 
 
     return (
         <div className="text-center">
