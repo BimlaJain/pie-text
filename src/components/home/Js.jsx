@@ -23,7 +23,8 @@ const Counting = () => {
 
     return (
         <div className="text-center pt-4">
-            <h1>Counting 9-0:</h1>
+            <h1>FOR LOOP</h1>
+            <h2>Counting 9-0:</h2>
             <ul className="list-unstyled">
                 {numbers.map((num, index) => (
                     <li key={index}>{num}</li>
@@ -31,6 +32,7 @@ const Counting = () => {
             </ul>
 
             <div>
+                <h2>USEEFFECT and USESTATE</h2>
                 <h2>Counter: {count}</h2>
                 <button onClick={increment} className="btn btn-primary me-3">Increment</button>
                 <button onClick={decrement} className="btn btn-danger">Decrement</button>
