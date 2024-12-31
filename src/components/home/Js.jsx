@@ -22,7 +22,7 @@ const Counting = () => {
     }, [count, isCounting]); 
 
     return (
-        <div className="text-center">
+        <div className="text-center pt-4">
             <h1>Counting 9-0:</h1>
             <ul className="list-unstyled">
                 {numbers.map((num, index) => (
