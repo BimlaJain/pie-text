@@ -319,4 +319,9 @@ thead tr th {
     grid-row: 6/7;
     gap: 4px;
   }
+    .product-card {
+      
+      padding: 12px 20px;
+  
+    }
 }

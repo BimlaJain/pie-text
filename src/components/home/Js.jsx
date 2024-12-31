@@ -34,8 +34,8 @@ const Counting = () => {
             <div>
                 <h2>USEEFFECT and USESTATE</h2>
                 <h2>Counter: {count}</h2>
-                <button onClick={increment} className="btn btn-primary me-3">Increment</button>
-                <button onClick={decrement} className="btn btn-danger">Decrement</button>
+                <button onClick={increment} className="p-2 border-black text-black rounded-3 me-3">Increment</button>
+                <button onClick={decrement} className="p-2 border-black text-black rounded-3">Decrement</button>
             </div>
         </div>
     );
