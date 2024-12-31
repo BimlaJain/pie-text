@@ -10,7 +10,7 @@ const Counting = () => {
     const increment = () => setCount(count + 1);
     const decrement = () => setCount(count - 1);
     useEffect(() => {
-        if (count <= 100 && isCounting) {
+        if (count <= 99 && isCounting) {
             const timer = setInterval(() => {
                 setCount(prevCount => prevCount + 1);
             }, 1000); 
@@ -23,7 +23,7 @@ const Counting = () => {
 
     return (
         <div className="text-center pt-4">
-            <h1>FOR LOOP</h1>
+            <h2>FOR LOOP</h2>
             <h2>Counting 9-0:</h2>
             <ul className="list-unstyled">
                 {numbers.map((num, index) => (
